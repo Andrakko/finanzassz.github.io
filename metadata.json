@@ -1,0 +1,6 @@
+{
+  "name": "FinanzasSZ",
+  "description": "Control Financiero Multi-Moneda con gestión de transacciones, cuentas, presupuestos, análisis con gráficos, asistente IA con Gemini, multi-usuario con aprobación por administrador y sincronización con Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
