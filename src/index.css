@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide all elements marked as no-print or standard app elements */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only printable-area and its children */
+  .printable-area, .printable-area * {
+    visibility: visible;
+  }
+
+  .printable-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Remove scrollbars and borders for printed page */
+  html, body {
+    background: #ffffff !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Ensure tables fit and do not break oddly */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
